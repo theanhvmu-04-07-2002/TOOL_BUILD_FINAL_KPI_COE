@@ -95,7 +95,7 @@ namespace TOOL_BUILD_FINAL_KPI_COE.MODULE
             {
                 int thoigian_cho = 500;
                 int timeOutTimKiem = 1 * 60 * 1000; // 1 phút cho tìm kiếm
-                int timeOutLuu = 3 * 60 * 1000;     // 3 phút cho lưu dữ liệu
+                int timeOutLuu = 10 * 60 * 1000;     // 10 phút cho lưu dữ liệu
 
                 
                 log($"➡️ Start {DateTime.Now.ToString("HH:mm:ss - dd.MM.yyyy")}");
