@@ -44,21 +44,21 @@ namespace TOOL_BUILD_FINAL_KPI_COE.FORM.AutoSaveTrangThai
 
         private void log(string message)
         {
-            // Phần ghi log vào file giữ nguyên
-            try
-            {
-                if (!Directory.Exists(logFolder))
-                    Directory.CreateDirectory(logFolder);
+            // Phần ghi log vào file 
+            //try
+            //{
+            //    if (!Directory.Exists(logFolder))
+            //        Directory.CreateDirectory(logFolder);
 
-                string logPath = Path.Combine(logFolder, "log.txt");
-                File.AppendAllText(logPath, $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}{Environment.NewLine}");
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"Lỗi khi ghi log ra file: {ex.Message}");
-            }
+            //    string logPath = Path.Combine(logFolder, "log.txt");
+            //    File.AppendAllText(logPath, $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}{Environment.NewLine}");
+            //}
+            //catch (Exception ex)
+            //{
+            //    Debug.WriteLine($"Lỗi khi ghi log ra file: {ex.Message}");
+            //}
 
-            // Phần ghi log vào TextBox có thể đơn giản hóa
+            // Phần ghi log vào TextBox 
             try
             {
                 if (txtLog == null || txtLog.IsDisposed) return;
@@ -269,8 +269,9 @@ namespace TOOL_BUILD_FINAL_KPI_COE.FORM.AutoSaveTrangThai
         private void AutoSaveStatus_Load_2(object sender, EventArgs e)
         {
             txtLog.Multiline = true;
-            txtLog.ScrollBars = ScrollBars.Vertical; // Hoặc ScrollBars.Both nếu muốn cả cuộn ngang
-            txtLog.WordWrap = false;
+            txtLog.ScrollBars = ScrollBars.Vertical;
+            txtLog.WordWrap = true;
+
             rdbElementMenuA.Checked = true;
         }
 
@@ -554,6 +555,11 @@ namespace TOOL_BUILD_FINAL_KPI_COE.FORM.AutoSaveTrangThai
         private void txtPasswordLogin_TextChanged(object sender, EventArgs e)
         {
             txtPasswordLogin.PasswordChar = '*';
+        }
+
+        private void txtLog_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

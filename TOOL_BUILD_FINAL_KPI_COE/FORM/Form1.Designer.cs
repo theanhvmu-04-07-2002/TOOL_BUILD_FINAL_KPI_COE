@@ -37,19 +37,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(315, 37);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(133, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 17);
+            this.label1.Size = new System.Drawing.Size(129, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "TOOL BUILD FINAL COE";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tbn_toan_trinh
             // 
-            this.tbn_toan_trinh.Location = new System.Drawing.Point(29, 122);
+            this.tbn_toan_trinh.Location = new System.Drawing.Point(22, 99);
+            this.tbn_toan_trinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbn_toan_trinh.Name = "tbn_toan_trinh";
-            this.tbn_toan_trinh.Size = new System.Drawing.Size(135, 39);
+            this.tbn_toan_trinh.Size = new System.Drawing.Size(101, 32);
             this.tbn_toan_trinh.TabIndex = 2;
             this.tbn_toan_trinh.Text = "Toàn trình";
             this.tbn_toan_trinh.UseVisualStyleBackColor = true;
@@ -57,9 +57,10 @@
             // 
             // btn_updateApp
             // 
-            this.btn_updateApp.Location = new System.Drawing.Point(12, 12);
+            this.btn_updateApp.Location = new System.Drawing.Point(9, 10);
+            this.btn_updateApp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_updateApp.Name = "btn_updateApp";
-            this.btn_updateApp.Size = new System.Drawing.Size(111, 23);
+            this.btn_updateApp.Size = new System.Drawing.Size(83, 19);
             this.btn_updateApp.TabIndex = 3;
             this.btn_updateApp.Text = "Cập nhật app";
             this.btn_updateApp.UseVisualStyleBackColor = true;
@@ -67,9 +68,10 @@
             // 
             // btb_autoSaveStatus
             // 
-            this.btb_autoSaveStatus.Location = new System.Drawing.Point(29, 183);
+            this.btb_autoSaveStatus.Location = new System.Drawing.Point(22, 149);
+            this.btb_autoSaveStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btb_autoSaveStatus.Name = "btb_autoSaveStatus";
-            this.btb_autoSaveStatus.Size = new System.Drawing.Size(135, 56);
+            this.btb_autoSaveStatus.Size = new System.Drawing.Size(101, 46);
             this.btb_autoSaveStatus.TabIndex = 4;
             this.btb_autoSaveStatus.Text = "-- ĐẨY LẺ -- \r\nUP LẠI VIEW\r\n";
             this.btb_autoSaveStatus.UseVisualStyleBackColor = true;
@@ -77,14 +79,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 642);
+            this.ClientSize = new System.Drawing.Size(282, 215);
             this.Controls.Add(this.btb_autoSaveStatus);
             this.Controls.Add(this.btn_updateApp);
             this.Controls.Add(this.tbn_toan_trinh);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "VanCuLaOK";
             this.Load += new System.EventHandler(this.Form1_Load);

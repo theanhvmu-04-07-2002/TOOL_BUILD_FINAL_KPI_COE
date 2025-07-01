@@ -8,7 +8,7 @@ namespace TOOL_BUILD_FINAL_KPI_COE
     {
         public BaseForm()
         {
-            this.Font = new Font("Microsoft Sans Serif", 10);
+            this.Font = new Font("Microsoft Sans Serif", 8);
         }
 
         private void InitializeComponent()
